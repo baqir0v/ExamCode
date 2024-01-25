@@ -1,0 +1,28 @@
+#searched{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0px;
+    h1{
+        font-size: 36px;
+    }
+    .searchedbox{
+        margin-top: 30px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

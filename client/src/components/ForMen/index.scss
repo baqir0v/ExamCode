@@ -1,0 +1,90 @@
+#formen {
+  background-image: url("https://preview.colorlib.com/theme/shop/img/men-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  .bgcolor {
+    background-color: rgba(255, 38, 146, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .formenbox {
+    gap: 50px 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .productstop {
+      text-align: center;
+      margin-top: 30px;
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .productsbottom {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 20px;
+      .card {
+        img {
+          width: 100%;
+        }
+        h5 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        h3 {
+          font-weight: 1000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #formen {
+    .card{
+        img {
+            width: 100px !important;
+          }
+    }
+    .formenbox{
+        .productsbottom {
+            grid-template-columns: 1fr !important;
+          }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #formen {
+    img {
+      width: 200px !important;
+    }
+    .productstop {
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    .productsbottom {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+}

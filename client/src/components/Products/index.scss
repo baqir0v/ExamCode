@@ -1,0 +1,112 @@
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  min-height: 50vh;
+  padding: 50px 0px;
+  .productstop {
+    text-align: center;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .productsbottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    .cardimg:hover{
+        .productdetails{
+            opacity: 1;
+            margin-top: 0;
+            transition: 0.5s;
+           
+        }
+      }
+    .cardimg {
+      position: relative;
+      img{
+        height: 100%;
+      }
+     
+      .productdetails {
+        background-color: rgba(255, 38, 146, 0.5);
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        margin-top: 20px;
+        transition: 0.5s;
+        color: white;
+        a{
+            color: white;
+        }
+        .icon{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+        }
+        .icon:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            color: black;
+            a{
+                color: black;
+            }
+        }
+      }
+    }
+    ul {
+      img {
+        width: 100%;
+      }
+      li {
+        h5 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        h3 {
+          font-weight: 1000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #products {
+    .productsbottom {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #products {
+    img {
+      width: 200px !important;
+    }
+    .productstop {
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    .productsbottom {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
