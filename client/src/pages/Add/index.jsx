@@ -70,7 +70,7 @@ const AddPage = () => {
                 </Form>
             </Formik>
             <div className="searchsort">
-                <input type="text" onChange={(e)=>setSearch(e.target.value)} />
+                <input placeholder="Search" type="text" onChange={(e)=>setSearch(e.target.value)} />
                 <button onClick={()=>setSort({property:"title",asc:true})}>1-9</button>
                 <button onClick={()=>setSort({property:"title",asc:false})}>9-1</button>
                 <button onClick={()=>setSort(null)}>Default</button>

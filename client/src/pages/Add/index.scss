@@ -1,4 +1,14 @@
 #addpage {
+  .searchsort {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    input{
+        padding-left: 10px;
+    }
+  }
   form {
     padding: 50px 0px;
     display: flex;
@@ -21,24 +31,23 @@
     margin-right: auto;
     border: 1px solid black;
     text-align: center;
-    img{
-        width: 180px;
+    img {
+      width: 180px;
     }
     tr {
       td {
         border: 1px solid black;
         padding: 0px 20px;
-        button{
-            background-color: red;
-            color: white;
-            border: none;
-            padding: 5px 10px;
+        button {
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 5px 10px;
         }
       }
       th {
         border: 1px solid black;
         padding: 0px 20px;
-        
       }
     }
   }

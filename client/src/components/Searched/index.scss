@@ -26,3 +26,19 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1300px) {
+    #searched{
+    
+        .searchedtop{
+            p{
+                font-size: 10px !important;
+               
+            }
+            h1{
+                font-size: 15px !important;
+            }
+        }
+    }
+}
